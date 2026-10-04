@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты | FC Oguz</title>
+    <meta name="description" content="Контакты FC Oguz и форма заявки на обучение и тренировки." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">FC</span>
+          <span class="brand-text">Oguz</span>
+        </a>
+
+        <nav class="menu">
+          <a href="index.html">Главная</a>
+          <a href="about.html">О клубе</a>
+          <a href="programs.html">Программы</a>
+          <a href="gallery.html">Галерея</a>
+          <a href="contact.html" class="active">Контакты</a>
+        </nav>
+
+        <a href="contact.html" class="btn btn-primary">Записаться</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container">
+          <p class="eyebrow">Контакты</p>
+          <h1>Свяжитесь с нами</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="info-panel">
+            <h3>FC Oguz</h3>
+            <p>Email: info@fcoguz.com</p>
+            <p>Телефон: +373 (000) 000-000</p>
+            <p>Адрес: Comrat, Moldova</p>
+            <p>Рабочие часы: 09:00 — 20:00</p>
+          </div>
+
+          <div class="info-panel">
+            <h3>Форма заявки</h3>
+            <form id="contactForm" class="contact-form">
+              <input type="text" name="name" placeholder="Ваше имя" required />
+              <input type="tel" name="phone" placeholder="Телефон" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <input type="text" name="age" placeholder="Возраст" />
+              <textarea name="message" rows="4" placeholder="Комментарий"></textarea>
+              <button type="submit" class="btn btn-primary">Отправить заявку</button>
+              <p id="formStatus" class="form-status"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> FC Oguz. Все права защищены.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
